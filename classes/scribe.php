@@ -1,5 +1,7 @@
 <?php
 
+include Bundle::path('scribe').'classes/markdown.php';
+
 class Scribe
 {
 	public static function content($name)
@@ -13,6 +15,6 @@ class Scribe
 	{
 		$content = Scribe_Content::find($id);
 		if (! $content) return 'No content.';
-		return $content->content;
+		return new Markdown($content->content);
 	}
 }

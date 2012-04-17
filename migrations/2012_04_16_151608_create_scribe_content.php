@@ -11,8 +11,10 @@ class Scribe_Create_Scribe_Content {
 	{
 		Schema::create('scribe_content', function($table) {
 			$table->increments('id');
+			$table->string('nickname', 128);
 			$table->string('name', 128);
 			$table->text('content');
+			$table->boolean('hidden');
 			$table->timestamps();
 		});
 	}
