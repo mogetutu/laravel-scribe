@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<a href="{{ URL::to_route('scribe_new') }}" class="btn btn-primary btn-small btn-up"><i class="icon-plus-sign icon-white"></i> New Region</a>
+	<a href="{{ URL::to_route('scribe_new') }}" class="btn btn-primary btn-small btn-up btn-pad"><i class="icon-plus-sign icon-white"></i> New Region</a>
 	<a href="{{ URL::to('/') }}" class="btn btn-small btn-up"><i class="icon-eye-open"></i> View Site</a>
 
 	<hr>

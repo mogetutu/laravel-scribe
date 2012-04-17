@@ -35,11 +35,11 @@
 		<hr>
 
 		<label for="content">Visibility</label>
-		<input type="checkbox"> Mark as hidden?
+		{{ Form::checkbox('hidden', 1, Input::old('hidden', $single->hidden)) }} Mark as hidden?
 
 		<hr>
 
-		{{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
+		{{ Form::submit('Save', array('class' => 'btn btn-primary btn-pad')) }}
 		{{ HTML::link_to_route('scribe_list', 'Cancel', array(), array('class' => 'btn')) }}
 	</form>
 @endsection
