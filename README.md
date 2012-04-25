@@ -5,7 +5,12 @@ Scribe can be used to define user editable content within your views. The bundle
 
 ### Installation
 
+First set up a database connection in the usual way.
+
 	php artisan bundle:install scribe
+
+	php artisan migrate:install
+	php artisan migrate
 
 Add the following to your `application/bundles.php`..
 
