@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Admin</title>
+	<title>Scribe</title>
 	{{ HTML::style('bundles/scribe/css/style.css') }}
 </head>
 <body>
