@@ -9,6 +9,7 @@ First set up a database connection in the usual way.
 
 	php artisan bundle:install scribe
 
+	php artisan bundle:publish
 	php artisan migrate:install
 	php artisan migrate
 
