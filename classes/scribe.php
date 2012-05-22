@@ -1,6 +1,6 @@
 <?php
 
-if ( ! class_exists('Markdown', false))
+if ( ! function_exists('Markdown'))
 {
 	include Bundle::path('scribe').'classes/markdown.php';
 }
